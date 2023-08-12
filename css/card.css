@@ -1,0 +1,76 @@
+.div100{
+
+padding: 4% !important;
+}
+.div101{
+    padding-left: 3.4% !important;
+}
+.div102{
+    width: 23rem !important;
+}
+body{
+    background-color: black !important;
+    color: white !important;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* navbar styling */
+#parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 90px;
+    width: 100%;
+}
+#child{
+    display: flex !important;
+    justify-content: center !important;
+width: 100%;
+
+} 
+.navbar{
+    width:90%;
+    height: 45px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 16%, rgba(55,49,49,1) 100%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
+    border-radius: 15px;
+    
+}
+
+.btn-outline-success{
+   border: 0px !important;
+   background-color:#E5A00D !important;
+   color: white !important;
+   overflow: hidden;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  
+}
+.navbar-brand{
+    color: white !important;
+    
+}
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+.dropdown-item{
+    color: black !important;
+}
+.button1{
+    height: fit-content !important;
+    width: fit-content !important;
+}
+.div103{
+    display: flex !important;
+    justify-content: center !important;
+    border: 0px !important;
+}
+.div104{
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: row !important;
+}

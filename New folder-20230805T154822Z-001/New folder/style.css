@@ -1,0 +1,7 @@
+/* .img-fluid{
+    height: 550px !important;
+} */
+.row{
+    display: flex !important;
+    justify-content: center !important;
+}

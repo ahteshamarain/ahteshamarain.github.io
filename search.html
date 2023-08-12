@@ -1,0 +1,418 @@
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Movies</title>
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<link rel="stylesheet" href="css/search.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Germania+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="parent">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"
+                  style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">STREAM<span
+                    style="color: #E5A00D; ">EASE</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html" target="_blank">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./about.html" target="b">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Movies
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./Favouriteshows.html" target="_blank">Favourite</a></li>
+                        <li><a class="dropdown-item" href="./horror.html" target="_blank">Horror</a></li>
+                        <li><a class="dropdown-item" href="./comedy.html" target="_blank">Comedy </a></li>
+                        <li><a class="dropdown-item" href="./action.html" target="_blank">Action</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./login.html" target="_blank">Login</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+      
+                    <button class="btn btn-outline-success button2" type="submit"><a href="./login.html" target="_blank">Sign
+                        Up</a> </button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+    </div>
+    <div class="movies">
+    <div class="container mt-5">
+       <center> <h1 id="web-head">SEARCH YOUR FAVOURITE <span id="shiner"> <i class="fa fa-heart" aria-hidden="true"></i> AND WATCH MOVIES</span></h1>
+        <form id="search-form">
+            <div class="mb-3">
+                <label for="movie-title" class="form-label">Enter Movie Title:</label>
+                <input type="text" class="form-control" id="movie-title" placeholder="Enter movie title">
+            </div>
+            <button id="arham" type="submit" class="btn btn-primary">Search</button>
+        </form>
+        <div class="mt-3" id="movie-details"></div>
+    </div>
+
+    <!-- Modal for playing trailers -->
+
+
+
+    <div class="modal fade" id="trailerModal" tabindex="-1" aria-labelledby="trailerModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="trailerModalLabel">Watch Trailer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="trailer-content"></div>
+            </div>
+        </div>
+    </div>
+</center>
+
+
+<div class="container-fluid card-body" style="background-color: #1f1f1f;">
+    <div class="container">
+      <div class="row row-cols-3 row-cols-md-6 g-3">
+        <!---------------- first column start -------------->
+        <div class="col">
+          <div class="c-hover">
+            <a href="./acard.html"
+              ><img
+                src="./pics/movie1 (1).jpg"
+                class="card-img-top image-radius"
+                alt="movie1"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="c-hover">
+            <a href="./acard1.html"
+              ><img
+                src="./pics/movie2 (1).jpg"
+                class="card-img-top"
+                alt="movie2"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="c-hover">
+            <a href="./acard2.html"
+              ><img
+                src="./pics/movie3 (1).jpg"
+                class="card-img-top"
+                alt="movie3"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="c-hover">
+            <a href="./acard3.html"
+              ><img src="./pics/movie4.jpg" class="card-img-top" alt="movie4"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="c-hover">
+            <a href="./acard4.html"
+              ><img
+                src="./pics/movie5 (1).jpg"
+                class="card-img-top"
+                alt="movie5"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="c-hover">
+            <a href="./acard5.html"
+              ><img
+                src="./pics/movie6 (1).jpg"
+                class="card-img-top"
+                alt="movie6"
+            /></a>
+          </div>
+        </div>
+        <!---------------- first column end -------------->
+
+
+        <!---------------- fourth column start -------------->
+        <div class="col">
+          <div class="c-hover">
+            <a href="./acard6.html"
+              ><img
+                src="./pics/movie19.jpg"
+                class="card-img-top"
+                alt="movie19"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="c-hover">
+            <a href="./acard7.html"
+              ><img
+                src="./pics/movie20.jpg"
+                class="card-img-top"
+                alt="movie20"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="c-hover">
+            <a href="./acard8.html"
+              ><img
+                src="./pics/movie21.jpg"
+                class="card-img-top"
+                alt="movie21"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="c-hover">
+            <a href="./acard9.html"
+              ><img
+                src="./pics/movie22.jpg"
+                class="card-img-top"
+                alt="movie22"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="c-hover">
+            <a href="./acard10.html"
+              ><img
+                src="./pics/movie23.jpg"
+                class="card-img-top"
+                alt="movie22"
+            /></a>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="c-hover">
+            <a href="./acard11.html"
+              ><img
+                src="./pics/movie24.jpg"
+                class="card-img-top"
+                alt="movie23"
+            /></a>
+          </div>
+        </div>
+        <!---------------- fourth column end -------------->
+      </div>
+    </div>
+    
+    </div>
+    <div class="row row-cols-2 row-cols-md-6 g-3">
+        <div class="col">
+            <div class="card c-hover">
+           <a href="./card31 (1).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/American-Carnage-2022-Movie - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card c-hover">
+              <a href="./card31 (2).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/American-Psycho-2000-Movie - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col c-hover">
+            <div class="card">
+              <a href="./card31 (3).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Bhootchakra-Pvt.-Ltd.-2019 - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col c-hover">
+            <div class="card">
+              <a href="./card31 (4).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Paranormal-Activity-3-2011-Movie - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col c-hover">
+            <div class="card">
+              <a href="./card31 (5).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Bird-Box-2018-Movie - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card c-hover">
+              <a href="./card31 (6).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Black-Sheep-2006 - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col c-hover">
+            <div class="card">
+              <a href="./card31 (7).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Bordello-Of-Blood-1996 - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col c-hover">
+            <div class="card">
+              <a href="./card31 (8).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Chhodon-Naa-Yaar-2007.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col c-hover">
+            <div class="card">
+              <a href="./card31 (9).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Dampyr-2022-Movie - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col c-hover">
+            <div class="card">
+              <a href="./card31 (10).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Evil-Dead-Rise-2023-Movie - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col c-hover">
+            <div class="card">
+              <a href="./card31 (11).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Follow-Me-2020-Movie - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card c-hover">
+              <a href="./card31 (12).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Gangnam-Zombie-2023-Movie - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col c-hover">
+            <div class="card">
+              <a href="./card31 (13).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/House-of-the-Dead-2-2005-Movie - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col c-hover">
+            <div class="card">
+              <a href="./card31 (14).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/House-of-the-Dead-2003 - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card c-hover">
+              <a href="./card31 (15).html" target="_blank" rel="noopener noreferrer"></a>  <img src="./project pics/Insidiou - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card c-hover">
+              <a href="./card31 (16).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Insidious-Chapter-3-2015-Movie - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card c-hover">
+              <a href="./card31 (17).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Insidious-The-Red-Door-2023-Dual-Audio-Hindi-English-Movie - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card c-hover">
+              <a href="./card31 (18).html" target="_blank" rel="noopener noreferrer"><img src="./project pics/Interview-with-the-Vampire-The-Vampire-Chronicles-1994-Movie - Copy.jpg" class="card-img-top div1" alt="..."></a>
+            </div>
+          </div>
+          
+          
+    
+          </div>
+
+
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("search-form");
+            const detailsDiv = document.getElementById("movie-details");
+            const trailerModal = new bootstrap.Modal(document.getElementById("trailerModal"));
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                const apiKey = "81bdec9c59454b58b39a05956af722b1";
+                const movieTitle = document.getElementById("movie-title").value;
+                const apiUrl = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${encodeURIComponent(movieTitle)}`;
+
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.results && data.results.length > 0) {
+                            const movie = data.results[0];
+                            displayMovieDetails(movie);
+                        } else {
+                            detailsDiv.innerHTML = "<p>No movie found with that title.</p>";
+                        }
+                    })
+                    .catch(error => console.error("Error fetching data:", error));
+            });
+
+            function displayMovieDetails(movie) {
+                detailsDiv.innerHTML = `
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="https://image.tmdb.org/t/p/w500/${movie.poster_path}" class="img-fluid" alt="${movie.title} Poster">
+                        </div>
+                        <div class="col-md-8">
+                            <h2>${movie.title}</h2>
+                            <p>Release Date: ${movie.release_date}</p>
+                            <p>Overview: ${movie.overview}</p>
+                            <button class="btn btn-primary" id="watch-trailer-button">Watch Trailer</button>
+                        </div>
+                    </div>
+                `;
+
+                const watchTrailerButton = document.getElementById("watch-trailer-button");
+                watchTrailerButton.addEventListener("click", function () {
+                    fetchTrailer(movie.id);
+                });
+            }
+
+            function fetchTrailer(movieId) {
+                const apiKey = "81bdec9c59454b58b39a05956af722b1";
+                const apiUrl = `https://api.themoviedb.org/3/movie/${movieId}/videos?api_key=${apiKey}`;
+
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.results && data.results.length > 0) {
+                            const trailerKey = data.results[0].key;
+                            const trailerContent = `
+                                <iframe width="100%" height="400" src="https://www.youtube.com/embed/${trailerKey}" frameborder="0" allowfullscreen></iframe>
+                            `;
+
+                            const trailerContentElement = document.getElementById("trailer-content");
+                            trailerContentElement.innerHTML = trailerContent;
+
+                            // Open the trailer modal
+                            trailerModal.show();
+                        } else {
+                            console.error("No trailer data available for this movie.");
+                        }
+                    })
+                    .catch(error => console.error("Error fetching trailer data:", error));
+            }
+        });
+    </script>
+
+    
+
+</div>
+</body>
+</html>

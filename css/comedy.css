@@ -1,0 +1,111 @@
+#parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 90px;
+    width: 100%;
+}
+#child{
+    display: flex !important;
+    justify-content: center !important;
+width: 100%;
+
+} 
+.navbar{
+    width:90%;
+    height: 45px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 16%, rgba(55,49,49,1) 100%, rgba(0,0,0,1) 100%, rgba(0,212,255,1) 100%);
+    border-radius: 15px;
+    
+}
+
+.btn-outline-success{
+   border: 0px !important;
+   background-color:#E5A00D !important;
+   color: white !important;
+   overflow: hidden;
+    max-width: 100%;
+    overflow-wrap: break-word;
+  
+
+}
+.bgpic{
+    min-height: 500px;
+    
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #e5a00d;
+    font-family: 'Carter One', cursive;
+    font-size: 30px;
+}
+.color{
+    background: rgb(61,13,16);
+    background: linear-gradient(90deg, rgba(61,13,16,1) 0%, rgba(18,4,1,1) 100%);
+}
+#m-heading{
+    padding-top: 40px;
+    color: white;
+    font-family: 'Vina Sans', cursive;
+    font-style: italic;
+    font-size: 65px;
+}
+
+#m-button{
+    color: white;
+    font-family: 'Germania One', cursive;
+    padding-right: 30px;
+    padding-left: 30px;
+    border: 1px solid white;
+    font-size: 30px;
+  
+}
+
+#m-button:hover{
+    color: black;
+    background-color: white;
+}
+
+#m-color{
+    color: #e5a00d;
+}
+
+#m-para{
+   color: white;
+   font-size: 20px;
+   font-family: 'Rye', cursive;
+}
+
+#m-endbut{
+    color: white;
+    font-family: 'Germania One', cursive;
+    border: 1px solid white;
+    font-size: 30px;
+}
+
+#m-endbut:hover{
+    color: red;
+    background-color: black;
+}
+.navbar-brand{
+    color: white !important;
+    
+}
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+.dropdown-item{
+    color: black !important;
+}
+.nav-link{
+    color: white !important;
+    font-size: 17px !important;
+    font-family: serif !important;
+}
